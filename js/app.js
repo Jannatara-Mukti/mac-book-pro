@@ -1,28 +1,31 @@
-
+    //This Function will change all cost to 0
     function changeCostTo0(productCost){
         const inputFeild =document.getElementById(productCost);
         inputFeild.innerText = 0;
         totalPrice();
     }
 
+    //This Function will change all cost to 20
     function changeCostTo20(productCost){
         const inputFeild =document.getElementById(productCost);
         inputFeild.innerText = 20;
         totalPrice();
     }
-
+    //This Function will change all cost to 100
     function changeCostTo100(productCost){
         const inputFeild =document.getElementById(productCost);
         inputFeild.innerText = 100;
         totalPrice();
     }
 
+    //This Function will change all cost to 180
     function changeCostTo180(productCost){
         const inputFeild =document.getElementById(productCost);
         inputFeild.innerText = 180;
         totalPrice();
     }
 
+    //This function will give the total price    
     function totalPrice(){
        const bestPriceInput = document.getElementById('best-price');
        const bestPrice = parseFloat(bestPriceInput.innerText);
@@ -43,6 +46,7 @@
        document.getElementById('final-total').innerText = total;
     }
 
+    //Promo code Calculation
     document.getElementById('apply-btn').addEventListener('click', function(){
         const promoInput = document.getElementById('promo-input');
         const promo = promoInput.value;
